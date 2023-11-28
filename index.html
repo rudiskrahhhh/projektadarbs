@@ -6,19 +6,84 @@
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">      
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
+       <style>
+          .header {
+            text-align: center;
+            padding: 65px;
+          }
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+          }
+          .row::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          @media screen and (max-width:600px) {
+           .column {
+            width: 100%;
+           }
+          }
+          p,h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            margin-left: 290px;
+           }
+           
+       </style>
    </head>
 
     <body>
-            <div class="container">
-            <div class="container text-center">
+ 
+            <div class="header">
         <h1>Ķīmisko Vielu Atklāšanas Dati</h1>
              </div> 
-             
-             
+             <div class="container">
+            <div class="topnav">
+                <a href="#">Sārmu metāli</a>
+                <a href="#">Sārmzemju metāli</a>
+                <a href="#">Pārejas metāli</a>
+                <a href="#">Amfotērie metāli</a>
+                <a href="#">Pusmetāli</a>
+                <a href="#">Lantanīdi</a>
+                <a href="#">Aktinīdi</a>
+                <a href="#">Halogēni</a>
+                <a href="#">Cēlgāzes</a>
+
+            </div>
+        </div>
+
+        
+            <div class="column">
+            <div class="container">
+              <h2>Column</h2>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+        </div>
 
 
 
-             
+ 
    </body>
 
 
