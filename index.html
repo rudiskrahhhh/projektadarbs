@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="lv">
     <head>
-
-       <title>Ķīmisko vielu atklāšanas dati</title>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">      
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+        <title>Ķīmisko vielu atklāšanas dati!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+          function halogeni(){
+           document.getElementById("hal").style.display = "block";
+           document.getElementById("pogaHalo").style.display = "none";
+          }
+          function celgazes() {
+           document.getElementById("cel").style.display = "block";
+           document.getElementById("pogaCel").style.display = "none";
+          }
+       </script>
        <style>
-          .header {
-            text-align: center;
-            padding: 65px;
-          }
-          .topnav {
-            overflow: hidden;
-            background-color: #333;
-          }
-          .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-          }
-          .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
+          body {
+           background-image: url(https://images.theconversation.com/files/121885/original/image-20160510-20731-1pf8nwv.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop);
+           background-size: cover;
+         }
+          h1, ul, h3, .fons {
+           background-color: rgb(0, 255, 242);
+         }
 
+<<<<<<< HEAD
           @media screen and (max-width:600px) {
            .column {
             width: 100%;
@@ -82,36 +80,222 @@
               <br>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
               </div>
+=======
+         .example::-webkit-scrollbar {
+           display: none;
+         }
+>>>>>>> 0e7596d2260d60eb49dae50fe0d56d3a67ac89ae
               
+         a  {
+           color: black;
+           text-decoration: none;
+         }
 
-   </body>
+         ul {
+            border: 4px solid rgb(0, 0, 0);
+            background-color: #00f7ff;
+            list-style-type: none;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+         }
 
+         ul li {
+            margin-bottom: 5px;
+         }
+         #cel, #hal {
+          display:none;
+         }
+       </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+          <div class="container ">
+             <div class="row vh-100">
+                   <div class="col">
+                      <h1 class="rounded-2 p-2 m-1 text-center">Elementu sērijas</h1>
+                      <ul class=" p-3">                       
+                         <li class="navbar-li"><a href="#sm" class="action-button">Sārmu metāli</a></li>
+                         <li class="navbar-li"><a href="#szm" class="action-button">Sārmzemju metāli</a></li>
+                         <li class="navbar-li"><a href="#lan" class="action-button">Lantanīdi</a></li>
+                         <li class="navbar-li"><a href="#akt" class="action-button">Aktinīdi</a></li>
+                         <li class="navbar-li"><a href="#pam" class="action-button">Pārejas metāli</a></li>
+                         <li class="navbar-li"><a href="#amf" class="action-button">Amfotērie metāli</a></li>
+                         <li class="navbar-li"><a href="#psm" class="action-button">Pusmetāli</a></li>
+                         <li class="navbar-li"><a href="#nem" class="action-button">Nemetāli</a></li>
+                         <li class="navbar-li"><a href="#hal" class="action-button">Halogēni</a></li>
+                         <li class="navbar-li"><a href="#cel" class="action-button">Cēlgāzes</a></li>
+                         <li class="navbar-li"><a href="#lin" class="action-button">Linki</a></li>                             
+                      </ul>
+                  </div>
 
+                  <div class="col-10 overflow-auto h-100">
+                    <div id="sm" class="p-3 fons m-3">
+                      <h2  class = "text-center" >Sārmu metāli</h2>
+                      <p>Litijs ir vieglākais no ķīmiskajiem elementiem, kas brīvā veidā normālos apstākļos nav gāze. Tā simbols ir Li un kārtas numurs periodiskajā tabulā ir 3 un tas ir vieglākais pazīstamais metāls. Tas ir sārmu metāls, tāpēc brīvā veidā dabā nav sastopams. Li, 1817.g., Zviedrijā, J. A. Arvidsons.</p><hr>
+                      <p>Nātrijs ir ķīmiskais elements ar simbolu Na un atomskaitli 11. Nātrijs ir sārmu metāls. Nātrijs dabā brīvā veidā nav sastopams, jo aktīvi reaģē ar gaisa skābekli un ūdeni. Lielākā daļa nātrija savienojumu šķīst ūdenī vai reaģē ar to. Kā jau visi sārmu metāli, nātrijs savienojumos var būt tikai vienvērtīgs, ar oksidēšanas pakāpi +1. 1807.g., Lielbritānija, V. Volastons.</p><hr>
+                      <p>Kālijs ir ķīmiskais elements ar simbolu K un atomskaitli 19. Kālijs ir viens no sārmu metāliem. Dabā brīvā veidā šis elements nav sastopams, jo ķīmiski ir ļoti aktīvs. Brīvā veidā kāliju iegūst, elektrolizējot tā savienojumu - parasti hlorīda vai hidroksīda kausējumus. 1907.g., Lielbritānija, H. Deivijs.</p><hr>
+                      <img src="https://cdn.britannica.com/96/12396-050-A1110D81/Humphry-Davy-Thomas-Lawrence-detail-oil-painting.jpg?w=400&h=300&c=crop" alt="H. Deivijs">
+                      <p>Rubīdijs ir ķīmiskais elements ar simbolu Rb un atomskaitli 37. Rubīdijs ir mīksts, sudrabbalts sārmu metāls. Rubīdijs dabā nav sastopams brīvā veidā, jo ir ķīmiski ļoti aktīvs. Rubīdijs ir sastopams dažos minerālos. Tāpat, kā visi sārmu metāli, rubīdijs var būt tikai vienvērtīgs. 1861.g., Vācija, R. Bunzens, G. R. Kirhofs.</p><hr>
+                      <p>Cēzijs ir ķīmiskais elements ar simbolu Cs un atomskaitli 55. Cēzijs ir sārmu metāls, tāpēc dabā brīvā veidā nav sastopams, jo intensīvi reaģē ar gaisa skābekli un ūdeni. Dabā cēzijs ir sastopams dažos minerālos. Savienojumos cēzijs var būt tikai vienvērtīgs. 1860.g. Vācijā. R.Bunzens, G.R. Kirhofs</p><hr>
+                      <p>Francijs ir ķīmiskais elements ar simbolu Fr un atomskaitli 87. Francijs ir sārmu metāls, kuram ir zemākā elektronegativitāte no visiem zināmajiem elementiem. Visi francija izotopi ir radioaktīvi. Tiek pieņemts, ka francijam ir līdzīgas ķīmiskās īpašības, kā citiem sārmu metāliem. Tāpat kā visiem citiem sārmu metāliem, arī francijam ir tikai viens valences elektrons. 1939.g. Francija (lol). M. perē</p><hr>
+                    </div>
+                    <div id="szm" class="p-3 fons m-3">
+                     <h2 class="text-center">Sārmzemju metāli</h3>
+                      <p>Berilijs ir ķīmiskais elements ar simbolu Be un atomskaitli 4. Ķīmiskā elementa nosaukums ir atvasināts no minerāla berila nosaukuma, no kura rūdām tas tiek iegūts. Berilijs ir pieskaitāms pie sārmzemju metāliem, tomēr tas ir visai stabils gaisā, jo metāla virsmu pārklāj plāna oksīda kārtiņa. Dabā berilijs brīvā veidā nav sastopams. Be, 1798, Francijā, Luī Nikolā Voklēns</p><hr>
+                      <p>Magnijs ir ķīmiskais elements ar simbolu Mg un atomskaitli 12. Magnijs ir sārmzemju metāls, dabā nav sastopams brīvā veidā. Savienojumos magnijs ir divvērtīgs. Mg, 1808.g., Lielbritānija, Hamfrijs Deivijs.</p><hr>
+                      <p>Kalcijs ir ķīmiskais elements ar simbolu Ca un atomskaitli 20. Kalcijs ir sārmzemju metāls, periodiskās tabulas 2. grupas elements. Tas ir mīksts, sudrabaini balts metāls, bet dabā tas brīvā veidā nav sastopams, atrodams vienīgi savienojumu veidā. Kalcijs ir piektais visbiežāk sastopamais ķīmiskais elements Zemes garozā. 1808.g., Lielbritanija, H.deivjs.</p><hr>
+                      <p>Stroncijs ir ķīmiskais elements ar simbolu Sr un atomskaitli 38. Stroncijs ir sārmzemju metāls. Stroncijs aktīvi reaģē ar gaisa skābekli un tāpēc brīvā veidā dabā nav sastopams. Stroncijs ir sastopams galvenokārt karbonātu un sulfātu 1808.g., Lielbritānija, H. Deivijs.</p><hr>
+                      <p>Bārijs ir ķīmiskais elements ar simbolu Ba un atomskaitli 56. Bārijs ir sārmzemju metāls. Bārijs ir ķīmiski aktīvs, tāpēc dabā nav sastopams brīvā veidā, bet galvenokārt karbonātu un sulfātu veidā. Bārija karbonāts un sulfāts ir visai mazšķīstošas vielas. 1808.g., Lielbritānija, H. Deivijs.</p><hr>
+                    </div>
+                    <div id="lan" class="p-3 fons m-3">
+                     <h2 class="text-center">Lantanīdi</h4>
+                      <p>Lantāns ir ķīmiskais elements ar simbolu La un atomskaitli 57. Tas ir sudrabbalts, mīksts metāls, kas elementu tabulā ir 3. grupā. Elementi ar atomskaitļiem no 58 līdz 71 ir ļoti līdzīgi lantānam, tādēļ tos sauc par lantanīdiem. 1839.g. Zviedrijā K.Musanders</p><hr>
+                      <p>Cērijs ir ķīmiskais elements ar simbolu Ce un atomskaitli 58. Tas ir mīksts, sudrabaini balts, ķīmiski aktīvs metāls un ir otrais aktīvākais lantanīds. 1803.g., Zviedrija, J. J. Brecēliuss, V. Hisingers, Vācija, M. Klaprots.</p><hr>
+                      <p>Prazeodīms ir ķīmiskais elements ar simbolu Pr un atomskaitli 59. Tas ir trešais elements lantanīdu grupā, un tradicionāli tiek uzskatīts par vienu no retzemju metāliem. Prazeodīms ir mīksts, sudrabbalts, kaļams un elastīgs metāls ar nozīmīgām magnētiskām, elektriskām, ķīmiskām un optiskām īpašībām. oksidēšanas pakāpes +2, +3 un +4. 1885.g. Austrijā. K. Auers fon Velsbahs.</p><hr>
+                      <p>Neodīms ir ķīmiskais elements ar simbolu Nd un atomskaitli 60. Tas ir ķīmiski aktīvs retzemju metāls. Tāpat, kā citus lantanīdus, neodīmu iegūst no polimetāliskajām rūdām. 1885.g., Austrija, K. Auers fon Velsbahs.</p><hr>
+                      <p>Prometijs ir ķīmiskais elements ar simbolu Pm un atomskaitli 61. Tas ir lantanīdu saimes radioaktīvs, mīksts metāls. Prometijam nav stabilu izotopu. Dabā tā koncentrācija ir ļoti zema. Prometijs veidojas urāna radioaktīvajā sabrukšanā. To lieto par bēta starojuma avotu. 1947.g. ASV. Dž. Marinskis, L. Glendenis.</p><hr>
+                      <p>Samārijs ir ķīmiskais elements ar simbolu Sm un atomskaitli 62. Tas ir mīksts retzemju metāls, lantanīds. Samāriju iegūst no polimetāliskām rūdām. 1879.g., Francija, P. Lekoks de Buabodrāns.</p><hr>
+                      <p>Eiropijs ir ķīmiskais elements ar simbolu Eu un atomskaitli 63. Periodiskajā tabulā tas atrodas lantanīdu saimē. Eiropijs ir ķīmiski visaktīvākais retzemju elements. 1901.g. Francija, E.Demarsē.</p><hr>
+                      <p>Gadolīnijs ir ķīmiskais elements ar simbolu Gd un atomskaitli 64. Tas ir sudrabbalts, mīksts metāls. Salīdzinot ar citiem lantanīdiem, tas ir relatīvi stabils gaisā. Zem tā kirī temperatūras gadolīnijs ir feromagnētisks. 1880.g., Šveice, Ž. Š. Mariņaks.</p><hr>
+                      <p>Terbijs ir ķīmiskais elements ar simbolu Tb un atomskaitli 65. Tas ir sudrabbalts, mīksts metāls. To iegūst no polimetāliskajām rūdām, tāpat kā citus lantanīdus. Terbija savienojumus lieto par leģējošo piemaisījumu pusvadītāju ierīcēm. Savienojumos terbijam var būt oksidēšanas pakāpes +3 un +4. 1843.g. Zviedrijā. K. Musanders.</p><hr>
+                      <p>Disprozijs ir ķīmiskais elements ar simbolu Dy un atomskaitli 66. Tas ir mīksts, sudrabbalts metāls. To lieto dažos specifiskos sakausējumos. Disproziju, tāpat kā pārējos lantanīdus, iegūst no polimetālu rūdām. 1886.g.,  Francija, P. Lekoks de Buabodrāns.</p><hr>
+                      <p>Holmijs ir ķīmiskais elements ar simbolu Ho un atomskaitli 67. Tas ir sudrabbalts, relatīvi mīksts, kaļams metāls. Holmiju tīrā veidā dabā tas nav sastopams. Holmijam ir liels magnētiskais moments, tāpēc to lieto magnētiem. Holmija oksīdu lieto par dzelteno krāsu keramikas glazūrām un stiklam. Savienojumos holmijam oksidēšanas pakāpe parasti ir +3. 1879.g. Zviedrijā P.Klēve.</p><hr>
+                      <p>Erbijs ir ķīmiskais elements ar simbolu Er un atomskaitli 68. Tas ir mīksts, plastisks metāls. Tāpat kā pārējos lantanīdus, to iegūst no polimetālu rūdām. 1843.g., Zviderija, K. Musanders.</p><hr>
+                      <p>Tūlijs ir ķīmiskais elements ar simbolu Tm un atomskaitli 69. Tas ir mīksts, sudrabpelēcīgs metāls un ir visretāk sastopamais lantanīds. Tāpat kā pārējos lantanīdus, to iegūst no polimetālu rūdām. Tūlijs ir dārgs un grūti pieejams, tāpēc tam tik pat kā nav praktiska pielietojuma. Medicīnā kā viegli pārvietojamu rentgenstarojuma avotu izmanto mākslīgi iegūto izotopu tūlijs-170. Savienojumos tūlijam parasti oksidēšanas pakāpe ir +3. 1879.g. Zviedrijā P.klēve.</p><hr>
+                      <p>Iterbijs ir ķīmiskais elements ar simbolu Yb un atomskaitli 70. Tas ir mīksts, sudrabbalts metāls. Tāpat kā pārējos lantanīdus, to iegūst no polimetālu rūdām. 1878.g., Šveice, Ž. Š. Mariņaks.</p><hr>
+                      <p>Lutēcijs ir ķīmiskais elements ar simbolu Lu un atomskaitli 71. Periodiskajā tabulā tas ir iekļauts lantanīdu grupa, tāpēc tas ir pieskaitāms arī pie retzemju metāliem. Lutēcijs ir sudrabaini balts, korozijas izturīgs metāls. To iegūst no citu metālu rūdu piemaisījumiem. Lutēcijs ir viens no blīvākajiem un dārgākajiem retzemju metāliem. Lutēciju varētu lietot par katalizatoru . Savienojumos lutēcijam parasti oksidēšanas pakāpe ir +3. 1907.g. Francijā. Ž. Ūrbēns</p><hr>
+                    </div>
+                    <div id="akt" class="p-3 fons m-3">
+                     <h2 class="text-center">Aktinīdi</h2>
+                      <p>Aktīnijs ir ķīmiskais elements ar simbolu Ac un atomskaitli 89. Tas ir mīksts, sudrabbalts radioaktīvs pārejas metāls. Stabilākā aktīnija izotopa 227Ac pussabrukšanas periods ir 21,8 gadi. Dabā tas ir sastopams urāna rūdās. Parasti aktīniju iegūst atomreaktoros no rādija. Aktīnijs ir apmēram 150 reizes radioaktīvāks par rādiju un to var lietot par radiācijas avotu. 1899.g. Francija. A. Debjerns.</p><hr>
+                      <p>Torijs ir vāji radioaktīvs ķīmiskais elements ar simbolu Th un atomskaitli 90. Tīrs torijs ir sudrabbalts metāls un apsūbē melns, ja nonāk saskarē ar gaisu, veidojot torija dioksīdu. Torijs ir mēreni ciets, kaļams un ar augstu kušanas temperatūru.</p><hr>
+                      <p>Protaktīnijs ir ķīmiskais elements ar simbolu Pa un atomskaitli 91. Tas ir blīvs, sudrabbalts, radioaktīvs metāls, pieder aktinīdu grupai un 7. perioda elementiem. Dabā tas ir sastopams urāna rūdā. Protaktīnijs ir dārgs un grūti pieejams, kā arī indīgs, tāpēc tam nav praktiska izmantojuma, izņemot zinātniskus mērķus. Protaktīnijs parasti ķīmiskajos savienojumos ir sastopams ar oksidēšanas pakāpi +5, bet var būt arī ar +2, +3 un +4. 1918.g. Vācija O. Hāns.</p><hr>
+                      <p>Urāns ir ķīmiskais elements ar simbolu U un atomskaitli 92. Tas ir sudrabpelēks, radioaktīvs un smags metāls, kurš pieder aktinīdu ķīmisko elementu saimei. Dabā tas ir sastopams gan augsnē, gan iežos, gan ūdenī, kā arī dažādu savienojumu veidā.1789.g., Vācija, M. Klaprots.</p><hr>
+                      <p>Neptūnijs ir ķīmiskais elements ar simbolu Np un atomskaitli 93. Tas ir aktinīdu saimes elements. Neptūnijs ir sudrabbalts radioaktīvs metāls. Neptūnijs ir pirmais sintētiskais transurāna elements. Tas mikrodaudzumos ir sastopams urāna rūdā, taču to parasti iegūst no plutonija ražošanas blakusproduktiem. Neptūniju lieto par plutonija–238 izejvielu un to varētu lietot par kodoldegvielu vai kodolieročiem. Savienojumos neptūnijam ir oksidēšanas pakāpes +3, +4, +5,+6, +7. 1940.g. ASV E.M Maksmilians.</p><hr>
+                      <p>Plutonijs ir ķīmiskais elements ar simbolu Pu un atomskaitli 94. Tīrs plutonijs ir sudrabbalts, radioaktīvs metāls. Plutonijs ir mākslīgi iegūts elements. Rūpnieciski plutoniju atomreaktoros ražo no urāna. 1940.g., ASV, Dž. Kenedijs, A. Vāls, E. M. Makmilans u.c.</p><hr>
+                      <p>Amerīcijs ir ķīmiskais elements ar simbolu Am un atomskaitli 95. Tas ir aktinīdu saimes elements. Amerīcijs ir sudrabbalts, radioaktīvs metāls. To iegūst, bombardējot plutoniju ar neitroniem. Amerīciju lieto par radiācijas avotu dūmu detektoros. Savienojumos amerīcijam visvairāk mēdz būt oksidēšanas pakāpes +3 un +4. 1944.g. ASV(lol) G. T. Sīborgs, R. Džeims.</p><hr>
+                      <p>Kirijs ir ķīmiskais elements ar simbolu Cm un atomskaitli 96. Tas ir radioaktīvs metāls, ietilpst aktinīdu ķīmisko elementu saimē. Kirijs ir ciets, blīvs un sudrabains metāls ar relatīvi augstu kušanas temperatūru. Savienojumos kirijs ir galvenokārt četrvērtīgs. 1944.g., ASV, G. T. Sīborgs, R. Džeimss, A. Giorso.</p><hr>
+                      <p>Berklijs ir ķīmiskais elements ar simbolu Bk un atomskaitli 97. Tas pieder aktinīdu un transurāna elementu saimēm. Kā visi transurāna elementi, arī berklijs ir radioaktīvs metāls. Šis ķīmiskais elements nav sastopams dabā, to iegūst tikai sintezējot. 1949.g. ASV S. tomsons, A. Giorso.</p><hr>
+                      <p>Kalifornijs ir mākslīgi radīts radioaktīvs ķīmiskais elements ar simbolu Cf un atomskaitli 98. Tas ir aktinīds un to iegūst, uz kiriju iedarbojoties ar alfa daļiņām. 1950.g., ASV, G. T. Sīborgs, R. Džeimss, A. Giorso.</p><hr>
+                      <p>Einšteinijs ir mākslīgs ķīmiskais elements ar simbolu Es un atomskaitli 99. Tas ir metālisks radioaktīvais elements, kas pieder pie aktinīdiem. Einšteinijs nosaukts par godu Albertam Einšteinam. Tas pirmo reizi atklāts 1952. gada decembrī ūdeņraža bumbas sprādziena radioaktīvajos nokrišņos, kur veidojies no urāna, tā kodoliem satverot lielu daudzumu neitronu. Šādiem kodoliem raksturīga daudzkārtēja bēta sabrukšana, kas katrreiz noved pie jauna elementa veidošanās. 1952.g. ASV zinātnieku grupa.</p><hr>
+                      <p>Fermijs ir mākslīgs ķīmiskais elements ar simbolu Fm un atomskaitli 100. Tas ir metālisks radioaktīvais elements. To iegūst no torija, urāna vai plutonija, apstarojot šos elementus ciklotronā ar neona, skābekļa vai oglekļa joniem. 1952.g., ASV, ASV zinātnieku grupa.</p><hr>
+                      <p>Mendeļejevijs ir ķīmiskais elements ar simbolu Md un atomskaitli 101. Tas ir metālisks radioaktīvais elements. To var iegūt no einšteinija, bombardējot to ciklotronā ar alfa daļiņām 1955.g. ASV A. Giorso.</p><hr>
+                      <p>Nobēlijs ir mākslīgs ķīmiskais elements ar simbolu No un atomskaitli 102. Tas ir radioaktīvs transurāna elements. To var iegūt, bombardējot kiriju ar oglekļa joniem elementārdaļiņu paātrinātājā. 1958.g., Zviedrija, Zinātnieku grupa.</p><hr>
+                      <p>Lourensijs ir mākslīgs ķīmiskais elements ar simbolu Lr un atomskaitli 103. Ķīmisko elementu periodiskajā tabulā tas pieder pie aktinīdiem, kā arī ir transurāna elements. Lourensiju var iegūt kodolsintēzē, bombardējot kalifornija atomus ar bora kodoliem 1961.g. ASV A. Giorso.</p><hr>
+                    </div>
+                    <div id="pam" class="p-3 fons m-3">
+                     <h2 class="text-center">Pārejas metāli</h2>
+                      <p>Skandijs ir ķīmiskais elements ar simbolu Sc un atomskaitli 21. Tas ir ļoti reti sastopams, izkliedēts pārejas metāls un nelielos daudzumos ir sastopams dažādos minerālos. Skandijs ir pirmais d elements periodiskajā sistēmā — tā atomā elektroni sāk aizpildīt d līmeni trešajā čaulā. Savienojumos skandijs lielākoties ir trīsvērtīgs, ar oksidēšanas pakāpi +3. 1879.g. Zviedrija. L.F. Nilsons.</p><hr>
+                      <p>Titāns ir ķīmiskais elements ar simbolu Ti un atomskaitli 22. Titāns ir viegls, stiprs, spožs un korozijas izturīgs pārejas metāls sudraba krāsā. To nespēj "saēst" pat jūras ūdens un hlors. 1789.g., Lielbritānija, Č. Hečets.</p><hr>
+                      <p>Vanādijs ir ķīmiskais elements ar simbolu V un atomskaitli 23. Tas ir sudrabbalts un mīksts 5. grupas (VA) pārejas metāls. Vanādijs dabā nav sastopams brīvā veidā, lielāko daļu vanādija iegūst no polimetāliskajām rūdām. Vanādiju parasti lieto tērauda sakausējumiem kā leģējošo elementu (kopā ar hromu). Vanādija oksīdu lieto par katalizatoru. Savienojumos vanādijam var būt oksidēšanas pakāpes +2, +3, +4 un +5. 1801.g. Meksika. A.M. del Rio.</p><hr>
+                      <p>Hroms ir ķīmiskais elements ar simbolu Cr un atomskaitli 24. Tas ir pirmais 6. grupas elements. Hroms ir ciets un korozijas izturīgs metāls, kuru lieto dzelzs sakausējumu pārklāšana un sakausējumiem. Dabā hroms reti ir sastopams brīvā veidā, taču rūpnieciski hromu iegūst no hroma rūdām. 1797.g., Francija, L. Voklēns.</p><hr>
+                      <p>Mangāns ir ķīmiskais elements ar simbolu Mn un atomskaitli 25. Mangāns ir pārejas metāls, kas pieder pie d elementiem. Mangāna ķīmijai ļoti raksturīgas oksidēšanās-reducēšanās reakcijas. Savienojumos mangānam var būt oksidēšanas pakāpe no +1 līdz +7, kā arī negatīvas oksidēšanas pakāpes.</p><hr>
+                      <p>Dzelzs ir ķīmiskais elements ar simbolu Fe un atomskaitli 26. Dzelzs ir 8. grupas 4. perioda metāls. Dzelzs ir ļoti izplatīts metāls, un to uzskata par desmito visizplatītāko elementu Visumā. Dzelzs ir svarīgākā Zemes sastāvdaļa un kopā ar niķeli atrodas galvenokārt tās kodolā. Zemes garozā dzelzs ir otrais izplatītākais metāls aiz alumīnija. Zināms sen.</p><hr>
+                      <p>Kobalts ir ķīmiskais elements ar simbolu Co un atomskaitli 27. Kobalts ir ciets, sudrabbalts, feromagnētisks metāls. Kobalts dabā galvenokārt ir sastopams polimetālisko rūdu sastāvā. Kobaltu lieto korozijas izturīgiem sakausējumiem, savukārt kobalta oksīdu lieto par violeto un zilo stiklu krāsvielu. Savienojumos kobaltam visbiežāk ir oksidēšanas pakāpe +2. 1742.g. Zvidrija. G.Brants.</p><hr>
+                      <p>Niķelis ir ķīmiskais elements ar simbolu Ni un atomskaitli 28. Tas ir sudrabbalts mirdzošs metāls ar nelielu zeltainu nokrāsu. Niķelis pieder pie pārejas metāliem, tas ir ciets un elastīgi. Dabā niķelis galvenokārt ir sastopams kā piemaisījums dzelzsrūdām. 1751.g., Zviedrija, A. Kronstets.</p><hr>
+                      <p>Varš ir ķīmiskais elements ar simbolu Cu (latīņu: cuprum) un atomskaitli 29. Varš dabā retumis ir sastopams brīvā veidā, tomēr lielāko daļu vara iegūst no sulfīdu un oksīdu rūdām. Varš ir sarkanbrūns metāls ar ļoti labu elektrovadītspēju un siltumvadītspēju. Varš ir viegli sakausējams ar citiem metāliem. Izplatītākie sakausējumi ir bronza un misiņš. Varš savienojumos var būt vienvērtīgs vai divvērtīgs. Zināms sen.</p><hr>
+                      <p>Cinks ir ķīmiskais elements ar simbolu Zn un atomskaitli 30. Tas ir zilganpelēks, amfotērs metāls. Cinks ir samērā aktīvs metāls, tāpēc dabā nav sastopams brīvā veidā. Tas reaģē ar skābēm, veidojot attiecīgo skābju sāļus un ūdeņradi, un ar sārmiem, veidojot cinkātus. Zināms sen.</p><hr>
+                      <p>Itrijs ir ķīmiskais elements ar simbolu Y un atomskaitli 39. Itrijs ir sudrabbalts, korozijas izturīgs metāls. To iegūst no retzemju metālu rūdām. Itrija oksīds ir viens no sarkanā luminofora komponentiem, krāsainajiem kineskopiem. Izplatītākā itrija oksidēšanas pakāpe ir +3. 1794.g.  Somija. J Gadolīns.</p><hr>
+                      <p>Cirkonijs ir ķīmiskais elements ar simbolu Zr un atomskaitli 40. Cirkonijs ir korozijas izturīgs pārejas metāls. To iegūst galvenokārt no cirkona minerāla, no kā arī cēlies elementa nosaukums. Cirkonija oksīds ir nozīmīgs ugunsizturīgo materiālu komponents. 1789.g., Vācija, M.Klaprots.</p><hr>
+                      <p>Niobijs, agrāk kolumbijs, ir ķīmiskais elements ar simbolu Nb un atomskaitli 41. Tas ir mīksts, pelēks un elastīgs pārejas metāls. Niobijs dabā nav sastopams brīvā veidā, jo ļoti viegli oksidējas. Niobiju iegūst no kolumbīta minerāla. Niobiju lieto dažādiem sakausējumiem. Savienojumos tam var būt oksidēšanas pakāpe +2, +3 un +5.</p><hr>
+                      <p>Molibdēns ir ķīmiskais elements ar simbolu Mo un atomskaitli 42. Molibdēnu galvenokārt iegūst, reducējot tā sulfīdu MoS2 . Molibdēnu pamatā lieto sakausējumos ar dzelzi. Molibdēns mikrodaudzumos nepieciešams augu normālai attīstībai.1778.g., Zviedrija, K. V. Šēle.</p><hr>
+                      <p>Tehnēcijs ir ķīmiskais elements ar simbolu Tc un atomskaitli 43. Tas ir sintētisks elements — iegūts mākslīgi kodolreaktoros. Tehnēcijs ir sudraboti pelēcīgs, kristālisks pārejas metāls, kas atrodas vienā apakšgrupā ar rēniju un mangānu, tādēļ to ķīmiskās īpašības ir samērā līdzīgas. Tehnēcijs ir radioaktīvs. Tehnēcijam ir iespējamas oksidēšanas pakāpes +2, +4, +5, +6 un +7. 1937.g. Itālija. K. Perjē, E. Segrē.</p><hr>
+                      <p>Rutēnijs ir ķīmiskais elements ar simbolu Ru un atomskaitli 44. Tas ir platīna grupas metāls un ir sastopams kā piemaisījums platīna rūdam. 1884.g., Krievija, K. Klauss.</p><hr>
+                      <p>Rodijs ir ķīmiskais elements ar simbolu Rh un atomskaitli 45. Tas ir 9. grupas elements. Tam ir laba korozijas izturība. Rodiju iegūst no dažādu metālu rūdām, kur tas ir sastopams kā piemaisījums. Rodiju lieto galvenokārt sakausējumiem ar platīnu un pallādiju, lai uzlabotu to mehāniskās īpašības. 1803. Liebritānija. V.Volaston.</p><hr>
+                      <p>Pallādijs ir ķīmiskais elements ar simbolu Pd un atomskaitli 46. Pallādijs ir relatīvi mīksts dārgmetāls, to iegūst no vara un niķeļa rūdām, tas var būt sastopams arī brīvā veidā. Pallādijs ir visvieglāk kūstošais un vismazāk blīvais platīna grupas metāls 1803.g., Lielbritanija, V. Volastons.</p><hr>
+                      <p>Sudrabs ir ķīmiskais elements ar simbolu Ag un atomskaitli 47. Dabā sudrabs ir sastopams brīvā veidā un savienojumos ar sēru un hloru. Sudrabs ir metāls ar vislielāko elektrovadītspēju un siltumvadītspēju. Savienojumos sudrabam var būt oksidēšanas pakāpe +1 un +2. Zināms sen.</p><hr>
+                      <p>Kadmijs ir ķīmiskais elements ar simbolu Cd un atomskaitli 48. Kadmijs ir samērā mīksts, toksisks metāls.1817.g., Vācija, F. Štromeiers.</p><hr>
+                      <p>Hafnijs ir ķīmiskais elements ar simbolu Hf un atomskaitli 72. Tas ir 4. jeb titāna grupas elements. Hafnijs ir korozijas izturīgs pārejas metāls. Hafnija karbīdam un nitrīdam ir ļoti augstas kušanas temperatūras. Hafnija savienojumi dabā parasti ir sastopami cirkonija rūdās. 1922.g., Nīderlande, Ungārija, G. Heveši, D. Kosters.</p><hr>
+                      <p>Tantals ir ķīmiskais elements ar simbolu Ta un atomskaitli 73. Tas ir korozijas izturīgs pārejas metāls. Tantalu lieto galvenokārt elektrolītiskajiem kondensatoriem, jo uz tantala virsmas veidojas plānāka oksīda kārtiņa, kā uz alumīnija, tāpēc ir iespējams izgatavot tāda paša izmēra kondensatoru ar lielāku kapacitāti. Savienojumos tantalam parasti ir oksidēšanas pakāpe +5. 1802.g. Zviedrijā. A. Ēkebergs.</p><hr>
+                      <p>Volframs ir ķīmiskais elements ar simbolu W un atomskaitli 74. Volframs ir viens no cietākajiem un grūti kūstošākajiem metāliem. Dabā volframs ir sastopams oksīdu rūdās. 1781.g., Zviderija,  K. V. Šele.</p><hr>
+                      <p>Rēnijs ir ķīmiskais elements ar simbolu Re un atomskaitli 75. Rēnijs ir mangāna grupas elements. Tas ir sudrabbalts un smags cēlmetāls. Rēnijs ir visai dārgs metāls, to lieto galvenokārt sakausējumiem. Savienojumos rēnijam ir iespējamas oksidēšanas pakāpes no -1 līdz +7, izplatītākās ir +7, +6, +4, +2 un −1. 1925.g. Vācijā I. un V. Nodaki.</p><hr>
+                      <p>Osmijs ir ķīmiskais elements ar simbolu Os un atomskaitli 76. Osmijs ir visblīvākais metāls. Dabā tas ir sastopams kā piemaisījums platīnam. Osmija(VIII) oksīds ir toksisks šķidrums. 1804.g., Lielbritanija, S. Tenants.</p><hr>
+                      <p>Irīdijs ir ķīmiskais elements ar simbolu Ir un atomskaitli 77. Irīdijs ir ciets, trausls platīna grupas metāls un dabā ir ļoti reti sastopams, galvenokārt kā piemaisījums platīna tīrradņiem. Relatīvi lielos daudzumos to var atrast meteorītos. Irīdiju lieto karstumizturīgiem sakausējumiem, tam ir ļoti laba korozijas izturība. Savienojumos irīdijs ir galvenokārt trīsvērtīgs un četrvērtīgs. 1804.g. Liebritānijā. H. Deivijs.</p><hr>
+                      <p>Platīns ir ķīmiskais elements ar simbolu Pt un atomskaitli 78. Platīns ir blīvs, kaļams, elastīgs un korozijas izturīgs pelēkbalts pārejas metāls. Platīns dabā galvenokārt ir sastopams brīvā veidā, lai gan Zemes garozā tas ir reti sastopams metāls. Zināms sen.</p><hr>
+                      <p>Zelts ir ķīmiskais elements ar simbolu Auun atomskaitli 79. Tas ir viens no pārejas metāliem, kas periodiskajā tabulā atrodas 11. grupā un 6. periodā. Zelts ir viens no dārgmetāliem un nedaudzajiem krāsainajiem metāliem. Zināms sen.</p><hr>
+                      <p>Dzīvsudrabs ir ķīmiskais elements ar simbolu Hg un atomskaitli 80. Dzīvsudrabs ir samērā inerts metāls ar viszemāko kušanas temperatūru — normālos apstākļos dzīvsudrabs ir šķidrums. Dabā dzīvsudrabs ievērojamos daudzumos ir sastopams oksīda veidā. Zināms sen.</p><hr>
+                      <p>Rezerfordijs ir mākslīgs ķīmiskais elements ar simbolu Rf un atomskaitli 104, nosaukts jaunzēlandiešu fiziķa Ernesta Rezerforda vārdā. Rezerfordijs nav sastopams dabā, to iegūst tikai laboratorijās. Tas ir ļoti radioaktīvs metāls.</p><hr>
+                      <p>Dubnijs ir mākslīgs ķīmiskais elements ar simbolu Db un atomskaitli 105. Tas ir ļoti radioaktīvs. 1968.g. G. Foļovs.</p><hr>
+                      <p>Sībordžijs ir mākslīgs ķīmiskais elements ar simbolu Sg un atomskaitli 106. Tas nosaukts par godu amerikāņu kodolķīmiķim Glenam Sībordžam. Tā kā sībordžijs ir mākslīgs ķīmiskais elements, tas dabā nav sastopams.</p><hr>
+                      <p>Borijs ir mākslīgs ķīmiskais elements ar simbolu Bh un atomskaitli 107. Tas nosaukts dāņu fiziķa Nilsa Bora vārdā. Dabā borijs nav sastopams. Visi borija izotopi ir ļoti radioaktīvi,  1976.g. Zinātnieku grupa.</p><hr>
+                      <p>Hasijs ir mākslīgs ķīmiskais elements ar simbolu Hs un atomskaitli 108. Periodiskajā tabulā hasijs iekļauts pie pārejas metāliem, 7. perioda un 8. grupas elements. Tiek sagaidīts, ka hasija ķīmiskās īpašības būs līdzīgas osmijam.</p><hr>
+                      <p>Meitnerijs ir mākslīgs ķīmiskais elements ar simbolu Mt un atomskaitli 109. Tas ir ļoti radioaktīvs ķīmiskais elements. Dabā meitnerijs nav sastopams. Ķīmisko elementu periodiskajā tabulā meitnerijs atrodas pie pārejas metāliem, 9. grupā zem irīdija. Pagaidām meitneriju nevar iegūt tādā daudzumā, lai varētu izpētīt tā fizikālās īpašības, lai gan tiek paredzēts ka tas būs sudrabains metāls, kas reaģēs ar gaisu, ūdeni un skābēm. 1982.g. Zinātnieku grupa.</p><hr>
+                      <p>Darmštatijs ir mākslīgs ķīmiskais elements ar simbolu Ds un atomskaitli 110. Tas ir ļoti radioaktīvs.</p><hr>
+                      <p>Rentgenijs ir ķīmiskais elements ar simbolu Rg un atomskaitli 111. Tas ir ļoti radioaktīvs un mākslīgi iegūts ķīmiskais elements (dabā šis elements nav sastopams). Pirmo reizi iegūts 1994.g.</p><hr>
+                      <p>Kopernikijs ir mākslīgs ķīmiskais elements ar simbolu Cn un atomskaitli 112. Par tā fiziskajām īpašībām nav zināms praktiski nekas, bet teorētiski kopernikijs varētu būt gaistošs metāls.</p><hr>
+                    </div>
+                    <div id="amf" class="p-3 fons m-3">
+                     <h2 class="text-center">Amfotērie metāli</h2>
+                      <p>Alumīnijs ir ķīmiskais elements ar simbolu Al un atomskaitli 13. Tas ir viegls, sudrabbalts metāls. Alumīnijs dabā nav sastopams brīvā veidā, jo reaģē ar ūdeni, skābēm un sārmiem.Alumīnijs ir amfotērs elements un spēj reaģēt ar skābēmun sārmiem, veidojot aluminātus. 1825.g., Dānija, H. K. Ersteds. </p><hr>
+                      <p>Gallijs ir ķīmiskais elements ar simbolu Ga un atomskaitli 31. Brīvā veidā gallijs dabā nav sastopams, jo ir samērā ķīmiski aktīvs. Arī gallija rūdas koncentrētā veidā nav īpaši izplatītas, tāpēc galliju lielākoties iegūst no citu metālu rūdu piemaisījumiem. Gallijs ir viens no visvieglāk kūstošajiem metāliem. Savienojumos gallijs parasti ir trīsvērtīgs. 1875.g. Francijā P.LEkoks de Baudobrāns </p><hr>
+                      <p>Indijs ir ķīmiskais elements ar simbolu In un atomskaitli 49. Tas ir grupas elements. Indijs dabā galvenokārt ir sastopams kā piemaisījums cinka rūdām. Indijs ir samērā mīksts metāls. To galvenokārt lieto viegli kūstošiem sakausējumiem. Indijam savienojumos parasti ir oksidēšanas pakāpe +3. 1863.g. Vācijā, F. Reihs, T. Rihters.</p><hr>
+                      <p>Alva ir ķīmiskais elements ar simbolu Sn un atomskaitli 50. Alva ir samērā viegli kūstošs metāls, kuru lieto galvenokārt dažādos viegli kūstošos sakausējumos un grūti kūstošos sakausējumos. Zinams sen.</p><hr>
+                      <p>Tallijs ir ķīmiskais elements ar simbolu Tl un atomskaitli 81. Tallijs ir viegli kūstošs, sudrabbalts, samērā aktīvs metāls un reaģē ar gaisa skābekli, lēni oksidējoties. Talliju iegūst galvenokārt no vara, cinka un citu metālu sulfīdu rūdām, jo tas pieder pie izkliedētiem elementiem un savus minerālus tikpat kā neveido. 1789.g. Lielbritānijā</p><hr>
+                      <p>Svins ir ķīmiskais elements ar simbolu Pb un atomskaitli 82. Svins ir toksisks smagais metāls ar relatīvi labu korozijas izturību. Brīvā veidā svins dabā ir sastopams ļoti reti. Svins veidojas arī daudzu smago radioaktīvo izotopu sabrukšanas procesā. Zināms sen.</p><hr>
+                      <p>Bismuts ir ķīmiskais elements ar simbolu Bi un atomskaitli 83. Bismuts dabā brīvā veidā sastopams ļoti reti, to iegūst no sulfīdu un oksīdu rūdām. Bismuts ir smags metāls, un tas ir mazāk toksisks kā svins. Bismutu lieto sakausējumiem, tai skaitā viegli kūstošiem sakausējumiem. Bismuta savienojumus lieto stikla glazūrām, jo bismuta oksīds labi saistās ar stiklu. Savienojumos bismutam var būt oksidēšanas pakāpes +3 un +5. 1739 Vācija. J.Pots</p><hr>
+                      <p>Nihonijs ir mākslīgs ķīmiskais elements ar simbolu Nh un atomskaitli 113. Tas ir ļoti radioaktīvs. 2004.g</p><hr>
+                      <p>Flerovijs ir mākslīgs ķīmiskais elements ar simbolu Fl un atomskaitli ir 114. Tas ir ļoti radioaktīvs 14. grupas transurāna elements. Flerovijs tika prognozēts ķīmiskais elements sākotnēji ar nosaukumu ekasvins.</p><hr>
+                      <p>Moskovijs ir ķīmiskais elements ar simbolu Mc un atomskaitli 115. Tā stabilākais izotops ir moskovijs-289 ar pussabrukšanas periodu 156 milisekundes. 2003.g. Krievija</p><hr>
+                      <p>Livermorija ir ķīmiskais elements ar atzīmi "Lv" un atomskaitli 116 periodiskajā tabulā. Tas ir sintētisks un īslaicīgs elements.</p><hr>    
+                      <p>Tenesīns ir mākslīgs ķīmiskais elements ar simbolu Ts un atomskaitli 117. Šis elements ir halogēnu analogs un teorētiski tam būtu jābūt pusmetālam. 2010.g. krievija</p><hr>
+                      
+                    </div>
+                    <div id="psm" class="p-3 fons m-3">
+                     <h2 class="text-center">Pusmetāli</h2>
+                      <p>Bors ir ķīmiskais elements ar simbolu B un atomskaitli 5. Bors dabā ir sastopams galvenokārt borskābes H3BO3 sāļu veidā, pazīstamākais šāds sāls ir nātrija tetraborāta dekahidrāts. Tīrā veidā bors ir cieta kristāliska viela. Boram ir iespējamas vairākas alotropiskās formas. B, 1808.g., Francijā, Ž.L. Gē-Lisaks, L. Tenārs.</p><hr>
+                      <p>Silīcijs ir ķīmiskais elements ar simbolu Si un atomskaitli 14. Silīcijs dabā brīvā veidā ir sastopams ļoti reti, bet lielos daudzumos ir sastopams oksīda SiO2 veidā, kā arī alumosilikātos. Brīvā veidā silīcijs var būt pelēka kristāliskā viela, vai arī brūns pulveris. Si, 1811.g., Francijā, Bernards Kurtuā.</p><hr>
+                      <p>Germānijs ir ķīmiskais elements ar simbolu Ge un atomskaitli 32. Germānijs ir spožs, ciets un pelēkbalts pusmetāls. Tas ir viens no 14. grupas elementiem, tādēļ tam ir līdzīgas ķīmiskās īpašības kā citiem šīs grupas elementiem, piemēram, silīcijam un alvai. 1886.g., Vācija, K. Vinklers.</p><hr>
+                      <p>Arsēns ir ķīmiskais elements ar simbolu As un atomskaitli 33. Periodiskajā tabulā arsēns ir 4. perioda un 15. grupas elements. Arsēns reti ir sastopams tīrā veidā, tas galvenokārt ir atrodams sulfītos. Tas pieder pie pusmetāliem. Atkarībā no modifikācijas, arsēnam var būt gan metālu, gan nemetālu īpašības. Zināms sen</p><hr>
+                      <p>Antimons ir ķīmiskais elements ar simbolu Sb un atomskaitli 51. Tas ir spoži pelēks pusmetāls, kas dabā galvenokārt ir sastopams sulfīda minerāla antimonīta  sastāvā, lai gan var būt sastopams arī brīvā veidā. Antimona savienojumi ir zināmi jau kopš seniem laikiem. Tie tika izmantoti kosmētikā.</p><hr>
+                      <p>Telūrs ir ķīmiskais elements ar simbolu Te un atomskaitli 52. Tas ir 16. grupas elements. Telūrs ir pusmetāls, kam piemīt gan metālu, gan nemetālu īpašības. Dabā telūrs parasti ir sastopams telurīdu veidā, lai gan var būt sastopams arī brīvā veidā. 1782.g., Ungārija, F. Millers</p><hr>
+                      <p>Polonijs ir ķīmiskais elements ar simbolu Po un atomskaitli 84. Tas ir reti sastopams, galvenokārt urāna rūdās. Visi polonija izotopi ir radioaktīvi. Pēc ķīmiskajām īpašībām polonijs ir līdzīgs bismutam un telūram. 1898.g., Francija, P. Kirī, M. Sklodovska-Kirī.	</p><hr>
+                    </div>
+                    <div id="nem" class="p-3 fons m-3">
+                     <h2 class="text-center">Nemetāli</h2>
+                     <p>Ūdeņradis ir periodiskās tabulas pirmais elements. Šo elementu apzīmē ar H un tā atomskaitlis ir 1. Normālos apstākļos ūdeņradis ir viegli uzliesmojoša un bezkrāsaina divatomu gāze bez smaržas. Tās ķīmiskā formula ir H2. H, 1766.g. , Lielbritānija, Henrijs Kevendiš</p><hr>
+                     <p>Ogleklis ir ķīmiskais elements ar simbolu C un atomskaitli 6. Ogleklis ietilpst visu organisko vielu sastāvā. Ogleklim ir divas stabilas alotropiskās formas: grafīts un dimants. Dimants ir viena no viscietākajām pazīstamajām vielām. Savukārt grafīts ir viens no mīkstākajiem minerāliem, un to lieto kā dažu smērvielu sastāvdaļu.</p><hr>
+                     <p>Slāpeklis ir ķīmiskais elements, kuru apzīmē ar simbolu N un tā atomskaitlis ir 7. Parasti slāpeklis ir divatomu gāze, kuras ķīmiskā formula ir N2. Dabā slāpeklis ir sastopams atmosfērā, kur tas ir galvenā gaisa sastāvdaļa. N, 1772.g., Lielbritānijā, V. Gregors.</p><hr>
+                     <p>Skābeklis ir ķīmiskais elements ar simbolu O un atomskaitli 8. Skābeklis periodiskajā tabulā ir pieskaitāms 2. perioda elementiem, kā arī pie halkogēniem, tomēr šo grupu bieži vien neizdala atsevišķi. Skābeklis ir tipisks nemetāls. Normālos apstākļos skābeklis veido vienkāršo vielu, kam ir divatomu molekulas ar ķīmisko formulu O2. Molekulārajam skābeklim nav ne krāsas, ne smaržas, ne garšas. O, 1774.g., Lielbritānijā, Džozefs Prīstlijs</p><hr>
+                     <p>Fosfors ir ķīmiskais elements ar simbolu P un atomskaitli 15. Fosfors ir nemetāls. Dabā tas brīvā veidā nav sastopams, bet ir sastopams fosforskābes sāļu - fosfātu veidā. Brīvā veidā fosforam visvairāk pazīstamas 3 alotropiskās formas: baltais fosfors, sarkanais fosfors un melnais fosfors.1669.g., Vācija, H. Brands.</p><hr>
+                     <p>Sērs ir ķīmiskais elements ar simbolu S un atomskaitli 16. Sērs ir nemetāls, kurš pieskaitāms pie halkogēniem, lai arī bieži vien šo grupu īpaši neizdala. Sērs deg ar zilu liesmu, veidojot sēra dioksīdu. Rūpnieciski nozīmīgākais sēra savienojums ir sērskābe. </p><hr>
+                     <p>Selēns ir ķīmiskais elements ar simbolu Se un atomskaitli 34. Tas ir nemetāls. Selēns dabā ļoti reti ir sastopams brīvā veidā. Tas galvenokārt ir selenīdu veidā, kā piemaisījums sulfīdu rūdām.Selēnu ražo no metālu, bieži no vara, rafinēšanas blakusproduktiem. 1817.g., Zviedrija, J. J. Bercēliuss.</p><hr>
+                   </div>
+                   <button id="pogaHalo" onclick="halogeni()">Halogēni</button>
+                   <button id="pogaCel" onclick="celgazes()">Cēlgāzes</button>
+                    <div id="hal" class="p-3 fons m-3">
+                     <h2 class="text-center">Halogēni</h2>
+                      <p>9.	Fluors ir ķīmiskais elements ar simbolu F un atomskaitli 9. Visos savienojumos fluors ir vienvērtīgs un tā oksidēšanas pakāpe ir -1. Fluors ir  viselektronegatīvākais elements. Brīvā veidā fluors ir toksiska gāze, arī šķīstošie fluorīdi ir indīgi!. 1886.g., Francija, A. Muasāns. </p><hr>
+                      <p>17.	Hlors ir ķīmiskais elements ar simbolu Cl un atomskaitli 17. Hlors pieder pie halogēniem un tam piemīt tipiskas nemetālu īpašības. Brīvā veidā hlors ir toksiska, korozīva, relatīvi viegli sašķidrināma gāze, kas sastāv no divatomu molekulām Cl2. Brīvā veidā dabā hlors ir sastopams dažās vulkāniskajās gāzēs.1774.g., Zviedrija, K. V. Šēle </p><hr>
+                      <p>Broms ir ķīmiskais elements ar simbolu Br un atomskaitli 35. Broms ir halogēns. Broms ir vienīgais nemetāls, kas normālos apstākļos ir šķidrums. Tas ir gaistošs sarkanbrūns šķidrums, kura tvaiki ir kodīgi un indīgi. Bromam ir iespējamas oksidēšanas pakāpes no -1 līdz +7.   1826.g. Francijā  A. balārs</p><hr>
+                      <p>Jods ir ķīmiskais elements ar simbolu I un atomnumuru 53. Jods ir smagākais neradioaktīvais halogēns. Jods dabā ir sastopams jodīdu veidā. 1811.g. Francijā B. Kurtuā</p><hr>
+                      <p>85.	Astats ir ķīmiskais elements ar simbolu At un atomskaitli 85. Astats ir radioaktīvs un dabā niecīgos daudzumos ir sastopams urāna rūdās. Astats ir smagākais halogēns. Visi astata izotopi ir radioaktīvi 1940.g. ASV D. Korsons, K. Makenzijs</p><hr>
+                      </div>
+                    <div id="cel" class="p-3 fons m-3">
+                     <h2 class="text-center">Cēlgāzes</h2>
+                      <p>Hēlijs ir ķīmiski visinertākais elements, kas tikpat kā neveido ķīmiskus savienojumus. Šī cēlgāze nav indīga, kā arī ir bez krāsas, smaržas un garšas. Hēlijs ir periodiskās tabulas otrais elements. No visiem elementiem hēlijam ir viszemākā kušanas un viršanas temperatūra. He, 1868.g. , Indijā, Pjērs Žils Cezārs Žansēns (francūzis)</p><hr>
+                      <p>Neons ir ķīmiskais elements — cēlgāze, kura simbols ir Ne un atomskaitlis ir 10. Neons ir ķīmiski inerts un neveido savienojumus. Ne, 1898.g., Lielbritānijā, Viljams Remzijs un  Moriss Traverss.</p><hr>
+                      <p>Kriptons ir ķīmiskais elements ar simbolu Kr un atomskaitli 36. Kriptons ir cēlgāze. Dabā kriptons ir sastopams mazos daudzumos brīvā veidā gaisā, no kā to arī iegūst frakcionēti destilējot sašķidrinātu gaisu. Kriptons ir ķīmiski ļoti inerts elements. Kriptonam ir raksturīgas briljantzaļas un oranžas spektrāllīnijas.1898.g., Lielbritānija, V. Remzijs, M.Treverss.</p><hr>
+                      <p>Ksenons ir ķīmiskais elements ar simbolu Xe un atomskaitli 54. Ksenons ir salīdzinoši smaga cēlgāze bez krāsas un smaržas, kura brīvā veidā nelielos daudzumos ir sastopama arī Zemes atmosfērā. Ksenons ir ķīmiski samērā inerta gāze. Ksenons vēsturiski bija pirmā cēlgāze, kurai tika iegūti ķīmiskie savienojumi. 1898.g., Lielbritanija, V. Remzijs, M. Treverss.</p><hr>
+                      <p>Radons ir ķīmiskais elements ar simbolu Rn un atomskaitli 86. Radons ir smaga, radioaktīva un bezkrāsaina cēlgāze. Tas veidojas dažādu radioaktīvo elementu radioaktīvās sabrukšanas procesā. 1899.g., Lielbritānija, E. Rezerfords, R. Ovens.</p><hr>
+                      <p>Oganesons ir mākslīgs ķīmiskais elements ar simbolu Og un atomskaitli 118. Oganesons pieder inerto gāzu grupai, tādēļ teorētiski tā ķīmiskajām īpašībām vajadzētu būt līdzīgām inerto gāzu īpašībām, bet fiziski normālos apstākļos oganesons būtu nevis gāze, bet viegli kūstoša cieta viela.</p><hr>
+                    </div>
+                    <div id="lin" class="p-3 fons m-3">
+                     <h2 class="text-center">Linki par ķīmiju</h2>
+                     <a id="saite" href="https://lv.wikipedia.org/wiki/Ķīmisko_elementu_saraksts">Ķīmisko elementu saraksts</a><br>
+                     <a id="saite" href="https://lv.wikipedia.org/wiki/Ķīmisko_elementu_periodiskā_tabula">Ķīmisko elementu periodiskā tabula</a><br>
+                     <a id="saite" href="https://lv.wikipedia.org/wiki/Kategorija:Ķīmiķi_pēc_tautības">Slavenākie ķīmiķi(pēc tautības)</a>
+                    </div>
 
+                    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>                        
+              </div>                       
+            </div>                 
+          </div>        
+        </div>            
+      </div>  
+    </div>
+  </body>
+</html>
 </html>
